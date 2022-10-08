@@ -6,7 +6,7 @@ gsap.to(".ts-iphone--1", {
     start: "top top", // when the top of the trigger hits the top of the viewport
     // end: "+=500", // end after scrolling 500px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
+    // markers: true,
   },
 });
 gsap.to(".ts-iphone--5", {
@@ -17,7 +17,7 @@ gsap.to(".ts-iphone--5", {
     start: "top top", // when the top of the trigger hits the top of the viewport
     // end: "+=500", // end after scrolling 500px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -30,7 +30,7 @@ gsap.to(".ts-iphone--2", {
     start: "top top", // when the top of the trigger hits the top of the viewport
     // end: "+=500", // end after scrolling 500px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
+    // markers: true,
   },
 });
 gsap.to(".ts-iphone--4", {
@@ -41,7 +41,7 @@ gsap.to(".ts-iphone--4", {
     start: "top top", // when the top of the trigger hits the top of the viewport
     // end: "+=500", // end after scrolling 500px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -54,7 +54,7 @@ gsap.to(".ts-iphone--3", {
     start: "top top", // when the top of the trigger hits the top of the viewport
     // end: "+=500", // end after scrolling 500px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
+    // markers: true,
   },
 });
 
