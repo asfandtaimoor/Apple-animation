@@ -17,7 +17,7 @@ body {
   .ts-hero-section {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: clamp(0.2rem, 2vw, 1rem);
   }
 }
 
@@ -37,9 +37,12 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
+  top: calc(50% - 2px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: -1;
-  border-radius: 5rem;
+  border-radius: clamp(10px, 3vw, 40px);
   overflow: hidden;
 }
 
