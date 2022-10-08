@@ -57,3 +57,21 @@ gsap.to(".ts-iphone--3", {
     markers: true,
   },
 });
+
+// Section 2
+gsap.from(".ts-section-2__title", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".ts-section-2__title",
+  },
+});
+gsap.from(".ts-section-2__subtitle", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".ts-section-2__subtitle",
+  },
+});
