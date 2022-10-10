@@ -25,8 +25,12 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  max-width: 1450px;
-  margin: 0 auto;
+  width: 1450px;
+  max-width: 140vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   gap: 2rem;
 }
 
@@ -35,7 +39,13 @@ body {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: clamp(0.2rem, 2vw, 1rem);
+    width: 500px;
   }
+}
+
+.ts-hero-section-outer {
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
