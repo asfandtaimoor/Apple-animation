@@ -49,13 +49,15 @@ gsap.from(".ts-section-2__title", {
   duration: 1,
   scrollTrigger: {
     trigger: ".ts-section-2__title",
+    toggleActions: "play pause restart reset",
   },
 });
 gsap.from(".ts-section-2__subtitle", {
   y: 50,
   opacity: 0,
-  duration: 1,
+  duration: 0.8,
   scrollTrigger: {
     trigger: ".ts-section-2__subtitle",
+    toggleActions: "play pause restart reset",
   },
 });
