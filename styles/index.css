@@ -26,7 +26,6 @@ body {
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   width: 1450px;
-  max-width: 140vw;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -59,6 +58,26 @@ body {
   isolation: isolate;
 }
 
+.ts-iphone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 441px;
+  height: 690px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/iphone-14-shadow.png");
+  z-index: -100;
+  background-size: 451px 677px;
+}
+
+@media (max-width: 767px) {
+  .ts-iphone::before {
+    height: 400px;
+    background-size: 260px 400px;
+  }
+}
+
 .ts-iphone .bg {
   position: absolute;
   left: 0;
@@ -71,6 +90,12 @@ body {
   z-index: -1;
   border-radius: clamp(10px, 3vw, 40px);
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .ts-iphone .bg {
+    border-radius: clamp(30px, 5vw, 40px);
+  }
 }
 
 .ts-iphone__outer {
@@ -88,8 +113,20 @@ body {
   margin-top: 200px;
 }
 
+@media (max-width: 767px) {
+  .ts-iphone--2, .ts-iphone--4 {
+    margin-top: 50px;
+  }
+}
+
 .ts-iphone--3 {
   margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .ts-iphone--3 {
+    margin-top: 0px;
+  }
 }
 
 .temp-section {
