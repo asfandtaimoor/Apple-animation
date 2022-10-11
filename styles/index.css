@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 * {
@@ -17,6 +18,10 @@ body {
 
 .ts-section__title {
   font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.ts-section__desc {
+  font-size: clamp(1.2rem, 5vw, 1.75rem);
 }
 
 .ts-hero-section {
@@ -143,5 +148,14 @@ body {
   .ts-section-2 {
     padding-top: 45px;
   }
+}
+
+.ts-section-2__title {
+  margin-bottom: 1.125rem;
+}
+
+.ts-section-2__header {
+  max-width: 816px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

@@ -44,7 +44,6 @@ gsap.to(".ts-iphone--3", {
 
 // Section 2
 gsap.from(".ts-section-2__title", {
-  y: 50,
   opacity: 0,
   duration: 1,
   scrollTrigger: {
@@ -53,11 +52,18 @@ gsap.from(".ts-section-2__title", {
   },
 });
 gsap.from(".ts-section-2__subtitle", {
-  y: 50,
   opacity: 0,
   duration: 0.8,
   scrollTrigger: {
     trigger: ".ts-section-2__subtitle",
+    toggleActions: "play pause restart reset",
+  },
+});
+gsap.from(".ts-section__desc", {
+  opacity: 0,
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: ".ts-section__desc",
     toggleActions: "play pause restart reset",
   },
 });
